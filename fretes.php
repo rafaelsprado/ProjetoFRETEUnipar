@@ -58,13 +58,13 @@ include 'includes/header.php';
                 </select>
             </div>
 
-            <div class="col-md-6">
+            <<div class="col-md-6">
                 <label class="form-label fw-bold">Endereço de Origem (Município/Estado):</label>
                 <select name="origem_id" class="form-select" required>
                     <option value="">Selecione a origem...</option>
                     <?php foreach ($enderecos as $e): ?>
                         <option value="<?= $e['id'] ?>">
-                            <?= htmlspecialchars($e['logradouro'] . ', ' . $e['numero'] . ' - ' . $e['município'] . '/' . $e['estado']) ?>
+                            <?= htmlspecialchars($e['logradouro'] . ', ' . $e['numero'] . ' - ' . $e['municipio'] . '/' . $e['estado']) ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
@@ -76,7 +76,7 @@ include 'includes/header.php';
                     <option value="">Selecione o destino...</option>
                     <?php foreach ($enderecos as $e): ?>
                         <option value="<?= $e['id'] ?>">
-                            <?= htmlspecialchars($e['logradouro'] . ', ' . $e['numero'] . ' - ' . $e['município'] . '/' . $e['estado']) ?>
+                            <?= htmlspecialchars($e['logradouro'] . ', ' . $e['numero'] . ' - ' . $e['municipio'] . '/' . $e['estado']) ?>
                         </option>
                     <?php endforeach; ?>
                 </select>
