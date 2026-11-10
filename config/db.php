@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$db   = 'logistica_db';
+$db   = 'frete_db';
 $user = 'root';
 $pass = '';
 
